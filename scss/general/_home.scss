@@ -1,0 +1,73 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin.scss";
+
+/*estilos de header*/
+
+.carouselDos{
+    display: none ;
+}
+
+header{
+    @include flex;
+    background-color:$secundary-color;
+    font-family: $font-family-aurora;
+
+ 
+    nav{
+        ul{
+            color: $primary-color;
+            font-family: $font-family-aurora;
+            font-size: 35px;
+            display: flex;
+            gap: 150px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 30px;
+        
+        }
+    }
+
+    
+}
+
+/*estilos de main*/
+
+
+.gallery {
+    width: 100%;
+    gap: 10px;
+    @include grid (grid,1fr, auto);
+   
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color:$secundary-color;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery img:nth-child(2),
+.gallery img:nth-child(4),
+.gallery img:nth-child(6) {
+                display: none;
+            }
+
+            
+ /*estilos de footer*/
+
+ footer{
+    font-family: $font-family-aurora;
+    font-size: 40px;
+    color:#d77362;
+    display: block;
+    text-align: center;
+    padding: 2.5rem ;
+    background-color:$secundary-color;  
+            }

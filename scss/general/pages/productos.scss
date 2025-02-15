@@ -1,0 +1,49 @@
+@import "../../utilidades/variables";
+
+/* Estilos generales */
+
+body{
+    background-color:$secundary-color;
+
+}
+
+.titulos {
+    color: #d77362;
+    font-family: "Aurora";
+    margin: 20px;
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none; 
+    gap: 30px; 
+    margin: 5px;
+}
+
+.contenedor2{
+    margin: 10px;
+    color: #d77362;
+    font-family: "Aurora";
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+
+.articulo, .btn, .item1, .item3, .item5 {
+    width: 100%; 
+    max-width: 800px;
+    text-align: center; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+margin: 5px;
+
+}

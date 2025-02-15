@@ -1,0 +1,10 @@
+@import "../utilidades/mixin.scss";
+
+/*estilos de tablet*/
+
+@media (min-width:600px) {
+    .gallery img:nth-child(2),
+    .gallery img:nth-child(4), {
+          display: block;
+    }
+  }
