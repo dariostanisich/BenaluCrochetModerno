@@ -1,6 +1,6 @@
 @import "../../utilidades/variables";
 
-* Estilos generales *
+/*estilos generales*/
 *{
   @include reset
  }
@@ -9,12 +9,52 @@
     background-color:$secundary-color;
 
  }
+/*estilos de header*/
 
  .titulos {
     @include flex; 
     @include estilo-texto;
-    margin: 30px;
-    margin-bottom: 40px;
+    margin: 15px;
+    margin-bottom: 15px;
+}
+
+header nav ul {
+  @include flex; 
+  flex-direction: row;
+  @include estilos-page;
+}
+
+/*estilos de main*/
+
+.contenedor2{
+  margin: 5px;
+  @include estilo-texto;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+.articulo, .btn, .item1, .item3, .item5 {
+  width: 100%; 
+  max-width: 800px;
+  text-align: center; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedor2 button{
+ margin-top: -15px;
+ margin-bottom: 10px;
+ margin-left: 15px;
+}
+
+.contenedor2 h3{
+margin-top: -15px;
+margin-left: 20px;
 }
 
  main p{
@@ -43,6 +83,8 @@
   height: auto;
 }
 
+/*estilos de footer*/
+
  footer{
    @include estilo-texto;
     text-align: center;
@@ -51,7 +93,7 @@
     padding: 0%;
   
 }
- .reseñaFooter{
+ .pagesFooter{
     top: 70%; 
     width: 90%;
     font-size: 20px;
@@ -93,7 +135,7 @@
         padding: 2rem;
         margin-top: 10px;
       }
-      .reseñaFooter{
+      .pagesFooter{
         font-size: 45px;
 
     }
