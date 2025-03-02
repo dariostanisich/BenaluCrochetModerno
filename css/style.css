@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -21,11 +22,11 @@ header {
   align-items: center;
   text-align: center;
   background-color: #f8edeb;
+  color: #d77362;
   font-family: "Aurora" #d77362;
 }
-header nav ul {
+header ul {
   color: #ffb5a8;
-  font-family: "Aurora" #d77362;
   font-size: 35px;
   display: flex;
   gap: 150px;
@@ -64,13 +65,31 @@ header nav ul {
 
 /*estilos de footer*/
 footer {
-  font-family: "Aurora" #d77362;
-  font-size: 40px;
   color: #d77362;
+  font-family: "Aurora" #d77362;
+  font-size: 50px;
   display: block;
   text-align: center;
-  padding: 2.5rem;
+  padding: 5%;
   background-color: #f8edeb;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 0px;
+}
+
+footer ul li a img {
+  width: 20%;
+  height: auto;
 }
 
 /*estilos de tablet*/
@@ -118,7 +137,12 @@ footer {
     display: block;
   }
 }
-/* Estilos generales */
+* Estilos generales * * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f8edeb;
 }
@@ -126,70 +150,67 @@ body {
 .titulos {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: #d77362;
-  font-family: "Aurora";
+  font-family: "Aurora" #d77362;
   margin: 30px;
+  margin-bottom: 40px;
 }
 
 main p {
   color: #d77362;
-  font-family: "Aurora";
+  font-family: "Aurora" #d77362;
   font-size: 25px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: 15px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 15vh;
-  gap: 20px;
-  margin-left: 120px;
+  text-align: center;
 }
 
 .mb-3 {
   width: 100%;
-  max-width: 400px;
-}
-
-.form-control {
+  height: auto;
+  resize: both;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.contactoJuntos {
+.imgReseñas {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 800px;
-}
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.contacto img {
-  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+  margin-left: 10%;
+  max-width: 80%;
+  height: auto;
 }
 
 footer {
-  font-family: "Aurora" #d77362;
-  font-size: 30px;
   color: #d77362;
-  display: block;
+  font-family: "Aurora" #d77362;
   text-align: center;
-  padding: 2.5rem;
   background-color: #f8edeb;
+  margin: 0%;
+  padding: 0%;
+}
+
+.reseñaFooter {
+  top: 70%;
+  width: 90%;
+  font-size: 20px;
+  margin-left: 8%;
 }
 
 @media (min-width: 600px) {
@@ -201,32 +222,32 @@ footer {
     font-size: 40px;
     margin: 15px;
   }
-  .form {
-    height: auto;
-    margin: 10px;
-    padding: 40px;
-  }
   .mb-3 {
     max-width: 80%;
+    margin-left: 10%;
   }
   textarea.form-control {
     width: 100%;
     height: 150px;
+    margin: 30px;
   }
-  .contactoJuntos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-  .contacto img {
-    max-width: 280px;
+  .imgReseñas {
+    gap: 10px;
+    margin-top: 5px;
+    margin-left: 10%;
+    max-width: 80%;
+    height: auto;
   }
   footer {
     font-size: 35px;
     padding: 2rem;
     margin-top: 10px;
   }
+  .reseñaFooter {
+    font-size: 45px;
+  }
 }
-@media (min-width: 1024px) {
+@media (min-width: 600px) and (min-width: 1024px) {
   .titulos {
     margin: 25px;
   }
@@ -247,22 +268,6 @@ footer {
     height: 80px;
     margin: 5px;
   }
-  .contactoJuntos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .contacto img {
-    max-width: 300px;
-  }
   footer {
     font-size: 40px;
     padding: 2rem;
@@ -275,7 +280,7 @@ body {
 
 .titulos {
   color: #d77362;
-  font-family: "Aurora";
+  font-family: "Aurora" #d77362;
   margin: 20px;
 }
 
@@ -289,7 +294,7 @@ header nav ul {
 .contenedor2 {
   margin: 10px;
   color: #d77362;
-  font-family: "Aurora";
+  font-family: "Aurora" #d77362;
   display: flex;
   flex-direction: column;
   align-items: center;

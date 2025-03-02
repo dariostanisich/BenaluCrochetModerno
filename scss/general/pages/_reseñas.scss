@@ -1,0 +1,129 @@
+@import "../../utilidades/variables";
+
+* Estilos generales *
+*{
+  @include reset
+ }
+
+ body{
+    background-color:$secundary-color;
+
+ }
+
+ .titulos {
+    @include flex; 
+    @include estilo-texto;
+    margin: 30px;
+    margin-bottom: 40px;
+}
+
+ main p{
+     @include estilo-texto;
+     font-size: 25px;
+     @include flex;}
+
+ .mb-3 {
+     width: 100%; 
+     height: auto; 
+     resize: both; 
+     @include flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 15px;
+ }
+
+.imgReseñas{
+ @include grid(grid, 1fr, auto auto);
+  justify-items: center; 
+  justify-content: center;
+  gap: 10px; 
+  margin-top: 5px;
+  margin-left: 10%;
+  max-width: 80%;
+  height: auto;
+}
+
+ footer{
+   @include estilo-texto;
+    text-align: center;
+    background-color:$secundary-color;  
+    margin: 0%;
+    padding: 0%;
+  
+}
+ .reseñaFooter{
+    top: 70%; 
+    width: 90%;
+    font-size: 20px;
+    margin-left: 8%;
+
+ }
+
+ @media (min-width:600px) {
+    .titulos {
+        margin: 25px;
+        font-size: 40px;
+      }
+      main p {
+        font-size: 40px;
+        margin: 15px;
+      }
+      
+      .mb-3 {
+        max-width: 80%;
+        margin-left:10% ;
+      }
+
+      textarea.form-control {
+        width: 100%; 
+        height: 150px; 
+        margin: 30px;
+      }
+      
+      .imgReseñas{
+       
+         gap: 10px; 
+         margin-top: 5px;
+         margin-left: 10%;
+         max-width: 80%;
+         height: auto;
+       }
+            footer {
+        font-size: 35px;
+        padding: 2rem;
+        margin-top: 10px;
+      }
+      .reseñaFooter{
+        font-size: 45px;
+
+    }
+    @media (min-width: 1024px) {
+      .titulos {
+        margin: 25px;
+      }
+      main p {
+        font-size: 30px;
+        margin: 15px;
+      }
+      .form {
+        height: auto;
+        margin-left: 60px;
+        padding: 50px;
+      }
+      .mb-3 {
+        max-width: 80%;
+      }
+
+      textarea.form-control {
+        width: 80%; 
+        height: 80px; 
+        margin: 5px;
+      }
+      
+      
+      footer {
+        font-size: 40px;
+        padding: 2rem;
+      }
+    }    
+  }
