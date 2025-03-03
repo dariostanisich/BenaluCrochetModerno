@@ -3,12 +3,29 @@
 /*estilos de desktop*/
 
 @media (min-width: 1024px) {
-  header div.inicio img {
-      max-width: 50%;
+  header img {
+      max-width: 25%;
       height: auto;
-      margin: 30px;
+      margin: 5px;
   }
 
+  .titulos {
+    font-size: 20px;
+  }
+
+  .productos nav ul li {
+    @include estilos-page;
+  
+  }
+  
+  header ul li {
+      margin-top : -25px;
+  }
+  
+  header ul li, header p {
+    font-size: 14px;
+  }
+  
   .carouselUno {
       width: 50%;
   }
@@ -71,7 +88,20 @@
   }
 
   footer {
-      font-size: 35px;
+      font-size: 20px;
       padding: 2rem;
   }
+
+  footer ul li a img {
+    width: 30px; 
+    margin: 10px;
+    height: auto; 
+}
+
+.pagesFooter ul li p {
+    font-size: 25px;
+    padding: 2rem;
+    margin-top: 5px;
+  }
+
 }
