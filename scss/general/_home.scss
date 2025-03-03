@@ -3,35 +3,33 @@
 
 /*estilos de header*/
 
-.carouselDos{
-    display: none ;
+.carouselDos {
+    display: none;
 }
 
-header{
+header {
     @include flex;
-    background-color:$secundary-color;
+    background-color: $secundary-color;
     @include estilo-texto;
 
-        ul{
-            color: $primary-color;
-            font-size: 35px;
-            display: flex;
-            gap: 150px;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 30px;
-        
-        }
+    ul {
+        color: $primary-color;
+        font-size: 35px;
+        display: flex;
+        gap: 150px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
     }
+}
 
- /*estilos de main*/
+/* Estilos de main */
 
 .gallery {
     width: 100%;
     gap: 10px;
-    @include grid (grid,1fr, auto);
-   
+    @include grid(grid, 1fr, auto);
 }
 
 .gallery img {
@@ -39,7 +37,7 @@ header{
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    background-color:$secundary-color;
+    background-color: $secundary-color;
 }
 
 .gallery img:hover {
@@ -49,32 +47,30 @@ header{
 .gallery img:nth-child(2),
 .gallery img:nth-child(4),
 .gallery img:nth-child(6) {
-                display: none;
-            }
+    display: none;
+}
 
-            
- /*estilos de footer*/
+/* Estilos de footer */
 
- footer{
+footer {
     @include estilo-texto;
     font-size: 50px;
     display: block;
     text-align: center;
-    padding: 5% ;
-    background-color:$secundary-color;  
-            }
+    padding: 5%;
+    background-color: $secundary-color;
+}
 
-            footer ul {
-                list-style: none; 
-                padding: 0; 
-                margin: 0; 
-                @include flex; 
-                flex-direction: row;
-                gap: 0px; 
-            }
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include flex;
+    flex-direction: row;
+    gap: 0px;
+}
 
-            
-            footer ul li a img {
-                width: 20%; 
-                height: auto; 
-            }
+footer ul li a img {
+    width: 20%;
+    height: auto;
+}

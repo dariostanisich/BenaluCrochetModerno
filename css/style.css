@@ -36,7 +36,7 @@ header ul {
   margin-top: 30px;
 }
 
-/*estilos de main*/
+/* Estilos de main */
 .gallery {
   width: 100%;
   gap: 10px;
@@ -63,7 +63,7 @@ header ul {
   display: none;
 }
 
-/*estilos de footer*/
+/* Estilos de footer */
 footer {
   color: #d77362;
   font-family: "Aurora" #d77362;
@@ -98,8 +98,49 @@ footer ul li a img {
   .gallery img:nth-child(4) {
     display: block;
   }
+  .titulos {
+    margin: 25px;
+    font-size: 40px;
+  }
+  .productos nav ul li {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  .contenedor2 button {
+    margin-top: -30px;
+  }
+  .feed p {
+    font-size: 30px;
+    margin: 5px;
+  }
+  .mb-3 {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  textarea.form-control {
+    width: 100%;
+    height: 150px;
+    margin: 30px;
+  }
+  .reseñas p {
+    font-size: 35px;
+    margin: 15px;
+  }
+  footer {
+    font-size: 35px;
+    padding: 2rem;
+    margin-top: 10px;
+  }
+  .pagesFooter {
+    margin-top: 50px;
+  }
+  .pagesFooter li p {
+    font-size: 45px;
+  }
 }
-/*estilos de tablet*/
+/*estilos de desktop*/
 @media (min-width: 1024px) {
   header div.inicio img {
     max-width: 50%;
@@ -135,6 +176,30 @@ footer ul li a img {
   .gallery img:nth-child(4),
   .gallery img:nth-child(6) {
     display: block;
+  }
+  .titulos {
+    margin: 25px;
+  }
+  main p {
+    font-size: 30px;
+    margin: 15px;
+  }
+  .form {
+    height: auto;
+    margin-left: 60px;
+    padding: 50px;
+  }
+  .mb-3 {
+    max-width: 80%;
+  }
+  textarea.form-control {
+    width: 80%;
+    height: 80px;
+    margin: 5px;
+  }
+  footer {
+    font-size: 35px;
+    padding: 2rem;
   }
 }
 /*estilos generales*/
@@ -198,25 +263,10 @@ img {
 }
 
 .contenedor2 button {
-  margin-top: -15px;
-  margin-bottom: 10px;
+  width: 20%;
+  margin-top: -35px;
+  margin-bottom: 5px;
   margin-left: 15px;
-}
-
-.contenedor2 h3 {
-  margin-top: -15px;
-  margin-left: 20px;
-}
-
-main p {
-  color: #d77362;
-  font-family: "Aurora" #d77362;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .mb-3 {
@@ -231,19 +281,38 @@ main p {
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-.imgReseñas {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  justify-items: center;
+main p {
+  color: #d77362;
+  font-family: "Aurora" #d77362;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
-  margin-top: 5px;
-  margin-left: 10%;
-  max-width: 80%;
-  height: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.resOcultaTablet,
+.resOcultaDesktop {
+  display: none;
+}
+
+.reseñas {
+  color: #d77362;
+  font-family: "Aurora" #d77362;
+  font-family: 12px;
+  margin-bottom: 25px;
+}
+
+.reseñas p {
+  margin-bottom: 15px;
+}
+
+span {
+  font-weight: bold;
 }
 
 /*estilos de footer*/
@@ -261,67 +330,6 @@ footer {
   width: 90%;
   font-size: 20px;
   margin-left: 8%;
-}
-
-@media (min-width: 600px) {
-  .titulos {
-    margin: 25px;
-    font-size: 40px;
-  }
-  main p {
-    font-size: 40px;
-    margin: 15px;
-  }
-  .mb-3 {
-    max-width: 80%;
-    margin-left: 10%;
-  }
-  textarea.form-control {
-    width: 100%;
-    height: 150px;
-    margin: 30px;
-  }
-  .imgReseñas {
-    gap: 10px;
-    margin-top: 5px;
-    margin-left: 10%;
-    max-width: 80%;
-    height: auto;
-  }
-  footer {
-    font-size: 35px;
-    padding: 2rem;
-    margin-top: 10px;
-  }
-  .pagesFooter {
-    font-size: 45px;
-  }
-}
-@media (min-width: 600px) and (min-width: 1024px) {
-  .titulos {
-    margin: 25px;
-  }
-  main p {
-    font-size: 30px;
-    margin: 15px;
-  }
-  .form {
-    height: auto;
-    margin-left: 60px;
-    padding: 50px;
-  }
-  .mb-3 {
-    max-width: 80%;
-  }
-  textarea.form-control {
-    width: 80%;
-    height: 80px;
-    margin: 5px;
-  }
-  footer {
-    font-size: 40px;
-    padding: 2rem;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

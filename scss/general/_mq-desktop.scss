@@ -1,54 +1,77 @@
 @import "../utilidades/mixin.scss";
 
-/*estilos de tablet*/
+/*estilos de desktop*/
 
 @media (min-width: 1024px) {
-    header div.inicio img {
-        max-width: 50%; 
-        height: auto;
-        margin: 30px;
-    }
-
-    
-    .carouselUno {
-              width: 50%;
-    }
-   
-    .carouselDos {
-        display: block;  
-        width: 50%;
-    }
-    
-    .carousel{
-        display: flex;
-    }
-
-    .carouselUno .carouselDos {
-        flex: 1;
-        box-sizing: border-box;
-  }
-  
-    .carouselUno {
-         margin-right: 5px;
+  header div.inicio img {
+      max-width: 50%;
+      height: auto;
+      margin: 30px;
   }
 
+  .carouselUno {
+      width: 50%;
+  }
 
-    .carouselDos {
-    
-         margin-left: 5px;
-    
+  .carouselDos {
+      display: block;
+      width: 50%;
+  }
+
+  .carousel {
+      display: flex;
+  }
+
+  .carouselUno .carouselDos {
+      flex: 1;
+      box-sizing: border-box;
+  }
+
+  .carouselUno {
+      margin-right: 5px;
+  }
+
+  .carouselDos {
+      margin-left: 5px;
+  }
+
+  .gallery {
+      @include grid(grid, repeat(2, 1fr), 3);
+  }
+
+  .gallery img:nth-child(2),
+  .gallery img:nth-child(4),
+  .gallery img:nth-child(6) {
+      display: block;
+  }
+
+  .titulos {
+      margin: 25px;
+  }
+
+  main p {
+      font-size: 30px;
+      margin: 15px;
+  }
+
+  .form {
+      height: auto;
+      margin-left: 60px;
+      padding: 50px;
+  }
+
+  .mb-3 {
+      max-width: 80%;
+  }
+
+  textarea.form-control {
+      width: 80%;
+      height: 80px;
+      margin: 5px;
+  }
+
+  footer {
+      font-size: 35px;
+      padding: 2rem;
+  }
 }
-
-    .gallery {
-         @include grid(grid, repeat(2, 1fr),3);
- }
-    
-    .gallery img:nth-child(2),
-    .gallery img:nth-child(4),
-    .gallery img:nth-child(6) {
-         display: block;
- }
- }
- 
- 
-

@@ -47,22 +47,14 @@ img {
 }
 
 .contenedor2 button{
- margin-top: -15px;
- margin-bottom: 10px;
+  width: 20%;
+ margin-top: -35px;
+ margin-bottom: 5px;
  margin-left: 15px;
+
 }
 
-.contenedor2 h3{
-margin-top: -15px;
-margin-left: 20px;
-}
-
- main p{
-     @include estilo-texto;
-     font-size: 25px;
-     @include flex;}
-
- .mb-3 {
+.mb-3 {
      width: 100%; 
      height: auto; 
      resize: both; 
@@ -70,18 +62,33 @@ margin-left: 20px;
      flex-direction: column;
      align-items: center;
      margin-top: 15px;
+     margin-bottom: 10px;
  }
 
-.imgReseñas{
- @include grid(grid, 1fr, auto auto);
-  justify-items: center; 
-  justify-content: center;
-  gap: 10px; 
-  margin-top: 5px;
-  margin-left: 10%;
-  max-width: 80%;
-  height: auto;
-}
+ main p{
+  @include estilo-texto;
+  font-size: 20px;
+  @include flex;
+ }
+
+ .resOcultaTablet,
+ .resOcultaDesktop{
+  display: none;
+ }
+
+ .reseñas{
+   @include estilo-texto;
+   font-family: 12px ;
+   margin-bottom: 25px;
+ }
+
+ .reseñas p {
+  margin-bottom: 15px;
+ }
+
+ span{
+   font-weight: bold;
+ }
 
 /*estilos de footer*/
 
@@ -101,71 +108,71 @@ margin-left: 20px;
 
  }
 
- @media (min-width:600px) {
-    .titulos {
-        margin: 25px;
-        font-size: 40px;
-      }
-      main p {
-        font-size: 40px;
-        margin: 15px;
-      }
+//  @media (min-width:600px) {
+//     .titulos {
+//         margin: 25px;
+//         font-size: 40px;
+//       }
+//       main p {
+//         font-size: 40px;
+//         margin: 15px;
+//       }
       
-      .mb-3 {
-        max-width: 80%;
-        margin-left:10% ;
-      }
+//       .mb-3 {
+//         max-width: 80%;
+//         margin-left:10% ;
+//       }
 
-      textarea.form-control {
-        width: 100%; 
-        height: 150px; 
-        margin: 30px;
-      }
+//       textarea.form-control {
+//         width: 100%; 
+//         height: 150px; 
+//         margin: 30px;
+//       }
       
-      .imgReseñas{
+//       .imgReseñas{
        
-         gap: 10px; 
-         margin-top: 5px;
-         margin-left: 10%;
-         max-width: 80%;
-         height: auto;
-       }
-            footer {
-        font-size: 35px;
-        padding: 2rem;
-        margin-top: 10px;
-      }
-      .pagesFooter{
-        font-size: 45px;
+//          gap: 10px; 
+//          margin-top: 5px;
+//          margin-left: 10%;
+//          max-width: 80%;
+//          height: auto;
+//        }
+//             footer {
+//         font-size: 35px;
+//         padding: 2rem;
+//         margin-top: 10px;
+//       }
+//       .pagesFooter{
+//         font-size: 45px;
 
-    }
-    @media (min-width: 1024px) {
-      .titulos {
-        margin: 25px;
-      }
-      main p {
-        font-size: 30px;
-        margin: 15px;
-      }
-      .form {
-        height: auto;
-        margin-left: 60px;
-        padding: 50px;
-      }
-      .mb-3 {
-        max-width: 80%;
-      }
+//     }
+    // @media (min-width: 1024px) {
+    //   .titulos {
+    //     margin: 25px;
+    //   }
+    //   main p {
+    //     font-size: 30px;
+    //     margin: 15px;
+    //   }
+    //   .form {
+    //     height: auto;
+    //     margin-left: 60px;
+    //     padding: 50px;
+    //   }
+    //   .mb-3 {
+    //     max-width: 80%;
+    //   }
 
-      textarea.form-control {
-        width: 80%; 
-        height: 80px; 
-        margin: 5px;
-      }
+    //   textarea.form-control {
+    //     width: 80%; 
+    //     height: 80px; 
+    //     margin: 5px;
+    //   }
       
       
-      footer {
-        font-size: 40px;
-        padding: 2rem;
-      }
-    }    
-  }
+    //   footer {
+    //     font-size: 40px;
+    //     padding: 2rem;
+    //   }
+    // }    
+  
