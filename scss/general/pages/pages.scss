@@ -65,11 +65,29 @@ img {
      margin-bottom: 10px;
  }
 
+ .form-control::placeholder {
+  text-align: center;
+  @include estilo-texto;
+
+}
+
+ .botEnviar{
+  width: 20%;
+ margin-bottom: 5px;
+ margin-left: 15px;
+ }
+
  main p{
   @include estilo-texto;
   font-size: 20px;
   @include flex;
  }
+
+.botonColor{
+  background-color: #d77362; 
+  border-color: #ffb5a8; 
+  color: #fff;
+}
 
  .reseñas {
   @include grid(grid, repeat(2, 1fr), repeat(2, 1fr));
@@ -78,9 +96,9 @@ img {
   height: 100vh;
 }
 .res {
-  background-color:#ccc;
+  background-color: $secundary-color;
   border: 1px solid #0002;
-  display: flex;
+  @include flex;
   align-items: center;
   justify-content: center;
 }
@@ -91,6 +109,7 @@ img {
  font-family: 12px ;
    margin-bottom: 25px;
 }
+
 
  .reseñas p {
   margin-bottom: 15px;
