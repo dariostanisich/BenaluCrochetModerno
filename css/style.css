@@ -213,6 +213,9 @@ footer ul li a img {
     height: 80px;
     margin: 5px;
   }
+  form-control::placeholder {
+    font-size: 50%;
+  }
   footer {
     font-size: 20px;
     padding: 2rem;
@@ -290,9 +293,23 @@ img {
 
 .contenedor2 button {
   width: 20%;
-  margin-top: -35px;
+  margin-top: -12px;
   margin-bottom: 5px;
   margin-left: 15px;
+}
+
+.btn-success {
+  background-color: #d77362;
+  border-color: #ffb5a8;
+  color: #fff;
+}
+
+.contenedor2 img {
+  border-radius: 8px;
+}
+
+.contenedor2 img:hover {
+  transform: scale(1.02);
 }
 
 .mb-3 {

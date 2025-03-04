@@ -12,14 +12,14 @@
 /*estilos de header*/
 
  .titulos {
-    @include flex; 
+    @include flex;
     @include estilo-texto;
     margin: 15px;
     margin-bottom: 15px;
 }
 
 header nav ul {
-  @include flex; 
+  @include flex;
   flex-direction: row;
   @include estilos-page;
 }
@@ -29,16 +29,16 @@ header nav ul {
 .contenedor2{
   margin: 5px;
   @include estilo-texto;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  gap: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .articulo, .btn, .item1, .item3, .item5 {
-  width: 100%; 
+  width: 100%;
   max-width: 800px;
-  text-align: center; 
+  text-align: center;
 }
 
 img {
@@ -48,16 +48,27 @@ img {
 
 .contenedor2 button{
   width: 20%;
- margin-top: -35px;
+ margin-top: -12px;
  margin-bottom: 5px;
  margin-left: 15px;
+ }
 
+ .btn-success {
+  @include boton-style;
+}
+
+.contenedor2 img{
+  border-radius: 8px;
+}
+
+.contenedor2 img:hover {
+  transform: scale(1.02);
 }
 
 .mb-3 {
-     width: 100%; 
-     height: auto; 
-     resize: both; 
+     width: 100%;
+     height: auto;
+     resize: both;
      @include flex;
      flex-direction: column;
      align-items: center;
@@ -84,9 +95,7 @@ img {
  }
 
 .botonColor{
-  background-color: #d77362; 
-  border-color: #ffb5a8; 
-  color: #fff;
+  @include boton-style;
 }
 
  .reseñas {
@@ -124,13 +133,13 @@ img {
  footer{
    @include estilo-texto;
     text-align: center;
-    background-color:$secundary-color;  
+    background-color:$secundary-color;
     margin: 0%;
     padding: 0%;
-  
+
 }
  .pagesFooter{
-    top: 70%; 
+    top: 70%;
     width: 90%;
     font-size: 20px;
     margin-left: 8%;

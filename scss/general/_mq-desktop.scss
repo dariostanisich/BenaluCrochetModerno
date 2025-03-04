@@ -87,6 +87,10 @@
       margin: 5px;
   }
 
+  form-control::placeholder {
+    font-size: 50%;
+  }
+
   footer {
       font-size: 20px;
       padding: 2rem;
