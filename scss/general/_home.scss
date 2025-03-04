@@ -55,6 +55,7 @@ header {
 footer {
     @include estilo-texto;
     font-size: 50px;
+    font-weight: bold;
     display: block;
     text-align: center;
     padding: 5%;

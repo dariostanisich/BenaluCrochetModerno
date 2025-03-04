@@ -68,6 +68,7 @@ footer {
   color: #d77362;
   font-family: "Aurora" #d77362;
   font-size: 50px;
+  font-weight: bold;
   display: block;
   text-align: center;
   padding: 5%;
@@ -134,16 +135,16 @@ footer ul li a img {
     margin-top: 10px;
   }
   .pagesFooter {
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .pagesFooter li p {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 /*estilos de desktop*/
 @media (min-width: 1024px) {
   header img {
-    max-width: 25%;
+    max-width: 22%;
     height: auto;
     margin: 5px;
   }
@@ -160,8 +161,9 @@ footer ul li a img {
   header ul li {
     margin-top: -25px;
   }
-  header ul li, header p {
-    font-size: 14px;
+  header ul li,
+  header p {
+    font-size: 18px;
   }
   .carouselUno {
     width: 50%;
@@ -225,6 +227,16 @@ footer ul li a img {
     margin: 10px;
     height: auto;
   }
+  .resFooterter {
+    margin-top: 100px;
+  }
+  .resFooterter {
+    padding: 2rem;
+    margin-top: 5px;
+  }
+  .resFooter p {
+    font-size: 35px;
+  }
   .pagesFooter ul li p {
     font-size: 25px;
     padding: 2rem;
@@ -242,7 +254,7 @@ body {
   background-color: #f8edeb;
 }
 
-/*estilos de header*/
+/* estilos de header */
 .titulos {
   display: flex;
   flex-direction: column;
@@ -269,7 +281,7 @@ header nav ul {
   margin-bottom: 25px;
 }
 
-/*estilos de main*/
+/* estilos de main */
 .contenedor2 {
   margin: 5px;
   color: #d77362;
@@ -280,7 +292,11 @@ header nav ul {
   gap: 20px;
 }
 
-.articulo, .btn, .item1, .item3, .item5 {
+.articulo,
+.btn,
+.item1,
+.item3,
+.item5 {
   width: 100%;
   max-width: 800px;
   text-align: center;
@@ -312,6 +328,10 @@ img {
   transform: scale(1.02);
 }
 
+.reseñas p:hover {
+  transform: scale(1.02);
+}
+
 .mb-3 {
   width: 100%;
   height: auto;
@@ -333,6 +353,16 @@ img {
   font-family: "Aurora" #d77362;
 }
 
+.mb-3 input[type=email] {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.mb-3 textarea {
+  width: 50%;
+  box-sizing: border-box;
+}
+
 .botEnviar {
   width: 20%;
   margin-bottom: 5px;
@@ -348,6 +378,14 @@ main p {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.res span {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.res:hover span {
+  text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.5);
 }
 
 .botonColor {
@@ -392,7 +430,7 @@ span {
   font-weight: bold;
 }
 
-/*estilos de footer*/
+/* estilos de footer */
 footer {
   color: #d77362;
   font-family: "Aurora" #d77362;
@@ -403,10 +441,41 @@ footer {
 }
 
 .pagesFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.pagesFooter ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagesFooter li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.resFooter {
   top: 70%;
   width: 90%;
-  font-size: 20px;
-  margin-left: 8%;
+  font-size: 25px;
+  margin-left: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

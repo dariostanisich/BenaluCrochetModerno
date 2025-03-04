@@ -1,21 +1,21 @@
 @import "../../utilidades/variables";
 
 /*estilos generales*/
-*{
-  @include reset
- }
+* {
+  @include reset;
+}
 
- body{
-    background-color:$secundary-color;
+body {
+  background-color: $secundary-color;
+}
 
- }
-/*estilos de header*/
+/* estilos de header */
 
- .titulos {
-    @include flex;
-    @include estilo-texto;
-    margin: 15px;
-    margin-bottom: 15px;
+.titulos {
+  @include flex;
+  @include estilo-texto;
+  margin: 15px;
+  margin-bottom: 15px;
 }
 
 header nav ul {
@@ -24,9 +24,9 @@ header nav ul {
   @include estilos-page;
 }
 
-/*estilos de main*/
+/* estilos de main */
 
-.contenedor2{
+.contenedor2 {
   margin: 5px;
   @include estilo-texto;
   display: flex;
@@ -35,7 +35,11 @@ header nav ul {
   gap: 20px;
 }
 
-.articulo, .btn, .item1, .item3, .item5 {
+.articulo, 
+.btn, 
+.item1, 
+.item3, 
+.item5 {
   width: 100%;
   max-width: 800px;
   text-align: center;
@@ -46,18 +50,18 @@ img {
   height: auto;
 }
 
-.contenedor2 button{
+.contenedor2 button {
   width: 20%;
- margin-top: -12px;
- margin-bottom: 5px;
- margin-left: 15px;
- }
+  margin-top: -12px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
 
- .btn-success {
+.btn-success {
   @include boton-style;
 }
 
-.contenedor2 img{
+.contenedor2 img {
   border-radius: 8px;
 }
 
@@ -65,45 +69,67 @@ img {
   transform: scale(1.02);
 }
 
-.mb-3 {
-     width: 100%;
-     height: auto;
-     resize: both;
-     @include flex;
-     flex-direction: column;
-     align-items: center;
-     margin-top: 15px;
-     margin-bottom: 10px;
- }
-
- .form-control::placeholder {
-  text-align: center;
-  @include estilo-texto;
-
+.reseñas p:hover {
+  transform: scale(1.02);
 }
 
- .botEnviar{
-  width: 20%;
- margin-bottom: 5px;
- margin-left: 15px;
- }
+.mb-3 {
+  width: 100%;
+  height: auto;
+  resize: both;
+  @include flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 
- main p{
+.form-control::placeholder {
+  text-align: center;
+  @include estilo-texto;
+}
+
+.mb-3 input[type="email"] {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.mb-3 textarea {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.botEnviar {
+  width: 20%;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+main p {
   @include estilo-texto;
   font-size: 20px;
   @include flex;
- }
+}
 
-.botonColor{
+.res span {
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.res:hover span {
+  text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.5);
+}
+
+.botonColor {
   @include boton-style;
 }
 
- .reseñas {
+.reseñas {
   @include grid(grid, repeat(2, 1fr), repeat(2, 1fr));
   gap: 5px;
   width: 100%;
   height: 100vh;
 }
+
 .res {
   background-color: $secundary-color;
   border: 1px solid #0002;
@@ -112,36 +138,52 @@ img {
   justify-content: center;
 }
 
-
-.res{
-@include estilo-texto;
- font-family: 12px ;
-   margin-bottom: 25px;
+.res {
+  @include estilo-texto;
+  font-family: 12px;
+  margin-bottom: 25px;
 }
 
-
- .reseñas p {
+.reseñas p {
   margin-bottom: 15px;
- }
-
- span{
-   font-weight: bold;
- }
-
-/*estilos de footer*/
-
- footer{
-   @include estilo-texto;
-    text-align: center;
-    background-color:$secundary-color;
-    margin: 0%;
-    padding: 0%;
-
 }
- .pagesFooter{
-    top: 70%;
-    width: 90%;
-    font-size: 20px;
-    margin-left: 8%;
 
- }
+span {
+  font-weight: bold;
+}
+
+/* estilos de footer */
+
+footer {
+  @include estilo-texto;
+  text-align: center;
+  background-color: $secundary-color;
+  margin: 0%;
+  padding: 0%;
+}
+
+.pagesFooter {
+  @include flex;
+  width: 100%;
+  font-size: 20px;
+}
+
+.pagesFooter ul {
+  @include flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagesFooter li {
+  @include flex;
+}
+
+.resFooter {
+  top: 70%;
+  width: 90%;
+  font-size: 25px;
+  margin-left: 5%;
+}

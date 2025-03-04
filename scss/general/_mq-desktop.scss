@@ -1,111 +1,122 @@
 @import "../utilidades/mixin.scss";
 
 /*estilos de desktop*/
-
 @media (min-width: 1024px) {
-  header img {
-      max-width: 25%;
-      height: auto;
-      margin: 5px;
-  }
+    header img {
+        max-width: 22%;
+        height: auto;
+        margin: 5px;
+    }
 
-  .titulos {
-    font-size: 20px;
-  }
+    .titulos {
+        font-size: 20px;
+    }
 
-  .productos nav ul li {
-    @include estilos-page;
-  
-  }
-  
-  header ul li {
-      margin-top : -25px;
-  }
-  
-  header ul li, header p {
-    font-size: 14px;
-  }
-  
-  .carouselUno {
-      width: 50%;
-  }
+    .productos nav ul li {
+        @include estilos-page;
+    }
 
-  .carouselDos {
-      display: block;
-      width: 50%;
-  }
+    header ul li {
+        margin-top: -25px;
+    }
 
-  .carousel {
-      display: flex;
-  }
+    header ul li,
+    header p {
+        font-size: 18px;
+    }
 
-  .carouselUno .carouselDos {
-      flex: 1;
-      box-sizing: border-box;
-  }
+    .carouselUno {
+        width: 50%;
+    }
 
-  .carouselUno {
-      margin-right: 5px;
-  }
+    .carouselDos {
+        display: block;
+        width: 50%;
+    }
 
-  .carouselDos {
-      margin-left: 5px;
-  }
+    .carousel {
+        display: flex;
+    }
 
-  .gallery {
-      @include grid(grid, repeat(2, 1fr), 3);
-  }
+    .carouselUno .carouselDos {
+        flex: 1;
+        box-sizing: border-box;
+    }
 
-  .gallery img:nth-child(2),
-  .gallery img:nth-child(4),
-  .gallery img:nth-child(6) {
-      display: block;
-  }
+    .carouselUno {
+        margin-right: 5px;
+    }
 
-  .titulos {
-      margin: 25px;
-  }
+    .carouselDos {
+        margin-left: 5px;
+    }
 
-  main p {
-      font-size: 30px;
-      margin: 15px;
-  }
+    .gallery {
+        @include grid(grid, repeat(2, 1fr), 3);
+    }
 
-  .form {
-      height: auto;
-      margin-left: 60px;
-      padding: 50px;
-  }
+    .gallery img:nth-child(2),
+    .gallery img:nth-child(4),
+    .gallery img:nth-child(6) {
+        display: block;
+    }
 
-  .mb-3 {
-      max-width: 80%;
-  }
+    .titulos {
+        margin: 25px;
+    }
 
-  textarea.form-control {
-      width: 80%;
-      height: 80px;
-      margin: 5px;
-  }
+    main p {
+        font-size: 30px;
+        margin: 15px;
+    }
 
-  form-control::placeholder {
-    font-size: 50%;
-  }
+    .form {
+        height: auto;
+        margin-left: 60px;
+        padding: 50px;
+    }
 
-  footer {
-      font-size: 20px;
-      padding: 2rem;
-  }
+    .mb-3 {
+        max-width: 80%;
+    }
 
-  footer ul li a img {
-    width: 30px; 
-    margin: 10px;
-    height: auto; 
-}
+    textarea.form-control {
+        width: 80%;
+        height: 80px;
+        margin: 5px;
+    }
 
-.pagesFooter ul li p {
-    font-size: 25px;
-    padding: 2rem;
-    margin-top: 5px;
-  }
+    form-control::placeholder {
+        font-size: 50%;
+    }
 
+    footer {
+        font-size: 20px;
+        padding: 2rem;
+    }
+
+    footer ul li a img {
+        width: 30px;
+        margin: 10px;
+        height: auto;
+    }
+
+    .resFooterter {
+        margin-top: 100px;
+    }
+
+    .resFooterter {
+        padding: 2rem;
+        margin-top: 5px;
+    }
+
+    .resFooter p {
+        font-size: 35px;
+    }
+
+    .pagesFooter ul li p {
+        font-size: 25px;
+        padding: 2rem;
+        margin-top: 5px;
+    }
 }
