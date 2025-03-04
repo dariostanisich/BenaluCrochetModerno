@@ -227,12 +227,8 @@ footer ul li a img {
     margin: 10px;
     height: auto;
   }
-  .resFooterter {
-    margin-top: 100px;
-  }
-  .resFooterter {
-    padding: 2rem;
-    margin-top: 5px;
+  .resFooter {
+    margin: 130px;
   }
   .resFooter p {
     font-size: 35px;
