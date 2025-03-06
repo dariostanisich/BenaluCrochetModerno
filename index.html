@@ -20,25 +20,40 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/x-icon" href="Imagenes/INDEX/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
     <header>
-      <img 
-        src="Imagenes/INDEX/Be.png" 
-        alt="Logo Benalu" 
-        title="Logo Benalu" 
-        height="auto" 
-      />
-      
-      <ul>
-        <li>
-          <p>Sobre mí</p>
-        </li>
-        <a href="pages/reseñas.html">
-          <li>Reseñas</li>
-        </a>
-      </ul>
+      <div class="container">
+        <div class="position-relative">
+          <img src="Imagenes/INDEX/portadaUno.PNG" alt="Imagen" class="img-fluid">
+          <img src="Imagenes/INDEX/portadaDos.jpg" alt="Imagen" class="img-fluid">
+          <img src="Imagenes/INDEX/portadaTres.jpg" alt="Imagen" class="img-fluid">
+          <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <img class="animate__animated animate__pulse" 
+              src="Imagenes/INDEX/benalu.png" 
+              alt="Logo Benalu" 
+              title="Logo Benalu" 
+              height="auto" 
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <p>¿Quién Soy?</p>
+          </li>
+          <li>
+            <a href="../Benalu/pages/resenas.html">Reseñas</a> 
+          </li>
+        </ul>
+      </div>
     </header>
 
     <div class="carousel">

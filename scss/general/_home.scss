@@ -7,20 +7,49 @@
     display: none;
 }
 
+.position-relative {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 0px;
+}
+
+.position-relative img.img-fluid {
+    width: 33.33%;
+    height: auto;
+}
+
+.container .position-relative .position-absolute {
+    top: 40% !important;
+    left: 20% !important;
+}
+
+header .container img {
+    max-width: 170%;
+}
+
+header img {
+    max-width: 30%;
+    height: auto;
+    margin: 5px;
+}
+
 header {
     @include flex;
     background-color: $secundary-color;
     @include estilo-texto;
 
     ul {
-        color: $primary-color;
-        font-size: 35px;
+        font-size: 40px;
         display: flex;
         gap: 150px;
         list-style: none;
         padding: 0;
         margin: 0;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -41,7 +70,7 @@ header {
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .gallery img:nth-child(2),
