@@ -83,7 +83,7 @@ header ul {
 }
 
 .gallery img:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 .gallery img:nth-child(2),
