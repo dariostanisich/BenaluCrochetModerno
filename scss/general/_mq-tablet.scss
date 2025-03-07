@@ -1,71 +1,86 @@
 @import "../utilidades/mixin.scss";
 
-/*estilos de tablet*/
-
+/* Estilos de tablet */
 @media (min-width: 600px) {
-
   .position-relative {
     gap: 15px;
-
   }
 
-
-    .gallery img:nth-child(2),
-    .gallery img:nth-child(4) {
-      display: block;
-    }
-  
-    .titulos {
-      margin: 25px;
-      font-size: 40px;
-    }
-  
-    .productos nav ul li {
-      font-size: 40px;
-    }
-  
-    h2 {
-      font-size: 35px;
-    }
-  
-    .contenedor2 button {
-      margin-top: -30px;
-    }
-  
-    .feed p {
-      font-size: 30px;
-      margin: 5px;
-    }
-  
-    .mb-3 {
-      max-width: 80%;
-      margin-left: 10%;
-    }
-  
-    textarea.form-control {
-      width: 100%;
-      height: 150px;
-      margin: 30px;
-    }
-  
-    .reseñas p {
-      font-size: 35px;
-      margin: 15px;
-    }
-  
-    footer {
-      font-size: 35px;
-      padding: 2rem;
-      margin-top: 10px;
-    }
-  
-    .pagesFooter {
-      margin-top: 20px;
-    }
-  
-    .pagesFooter li p {
-      font-size: 35px;
-    }
-  
+  .gallery img:nth-child(2),
+  .gallery img:nth-child(4) {
+    display: block;
   }
-  
+
+  .titulos {
+    margin: 25px;
+    font-size: 40px;
+  }
+
+  .productos nav ul li {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .contenedor2 button {
+    margin-top: -30px;
+  }
+
+  .feed p {
+    font-size: 30px;
+    margin: 5px;
+  }
+
+  .mb-3 {
+    max-width: 80%;
+    margin-left: 10%;
+  }
+
+  textarea.form-control {
+    width: 100%;
+    height: 150px;
+    margin: 30px;
+  }
+
+  .reseñas p {
+    font-size: 35px;
+    margin: 15px;
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .footerIndex {
+    position: relative;
+    width: 100%;
+  }
+
+  .footerBg {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .contacto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 255px;
+  }
+
+  .contacto img {
+    width: 40px;
+    height: auto;
+  }
+}

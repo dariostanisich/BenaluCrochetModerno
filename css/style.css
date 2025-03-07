@@ -10,7 +10,13 @@ body {
   height: 75dvh;
 }
 
-/*estilos de header*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos de header */
 .carouselDos {
   display: none;
 }
@@ -92,37 +98,43 @@ header ul {
   display: none;
 }
 
-/* Estilos de footer */
+/* Estilos para el footer */
 footer {
-  color: #d77362;
-  font-family: "Aurora" #d77362;
-  font-size: 50px;
-  font-weight: bold;
-  display: block;
-  text-align: center;
-  padding: 5%;
-  background-color: #f8edeb;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-footer ul {
+.footerIndex {
+  position: relative;
+  width: 100%;
+}
+
+.footerBg {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.contacto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: row;
-  gap: 0px;
+  gap: 270px;
 }
 
-footer ul li a img {
-  width: 20%;
+.contacto img {
+  width: 40px;
   height: auto;
 }
 
-/*estilos de tablet*/
+/* Estilos de tablet */
 @media (min-width: 600px) {
   .position-relative {
     gap: 15px;
@@ -162,18 +174,37 @@ footer ul li a img {
     margin: 15px;
   }
   footer {
-    font-size: 35px;
-    padding: 2rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .footerIndex {
+    position: relative;
+    width: 100%;
+  }
+  .footerBg {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+  .contacto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
     margin-top: 10px;
+    display: flex;
+    gap: 255px;
   }
-  .pagesFooter {
-    margin-top: 20px;
-  }
-  .pagesFooter li p {
-    font-size: 35px;
+  .contacto img {
+    width: 40px;
+    height: auto;
   }
 }
-/*estilos de desktop*/
+/* Estilos de desktop */
 @media (min-width: 1024px) {
   .container .position-relative .position-absolute {
     top: 40% !important;
@@ -255,27 +286,42 @@ footer ul li a img {
     font-size: 50%;
   }
   footer {
-    font-size: 20px;
-    padding: 2rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
   }
-  footer ul li a img {
-    width: 30px;
-    margin: 10px;
+  .footerIndex {
+    position: relative;
+    width: 100%;
+  }
+  .footerBg {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+  .contacto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    gap: 330px;
+  }
+  .contacto img {
+    width: 40px;
     height: auto;
   }
-  .resFooter {
-    margin: 130px;
-  }
-  .resFooter p {
-    font-size: 35px;
-  }
-  .pagesFooter ul li p {
-    font-size: 25px;
-    padding: 2rem;
-    margin-top: 5px;
-  }
 }
-/*estilos generales*/
+.ressFot {
+  margin-top: 130px;
+}
+
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -286,7 +332,7 @@ body {
   background-color: #f8edeb;
 }
 
-/* estilos de header */
+/* Estilos de header */
 .titulos {
   display: flex;
   flex-direction: column;
@@ -313,7 +359,7 @@ header nav ul {
   margin-bottom: 25px;
 }
 
-/* estilos de main */
+/* Estilos de main */
 .contenedor2 {
   margin: 5px;
   color: #d77362;
@@ -451,7 +497,7 @@ main p {
   color: #d77362;
   font-family: "Aurora" #d77362;
   font-family: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .reseñas p {
@@ -462,52 +508,17 @@ span {
   font-weight: bold;
 }
 
-/* estilos de footer */
+/* Estilos de footer */
 footer {
-  color: #d77362;
-  font-family: "Aurora" #d77362;
-  text-align: center;
-  background-color: #f8edeb;
-  margin: 0%;
-  padding: 0%;
-}
-
-.pagesFooter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
   width: 100%;
-  font-size: 20px;
+  overflow: hidden;
 }
 
-.pagesFooter ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: row;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.pagesFooter li {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.resFooter {
-  top: 70%;
-  width: 90%;
-  font-size: 25px;
-  margin-left: 5%;
+.footerBg {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

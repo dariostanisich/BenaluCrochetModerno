@@ -1,6 +1,6 @@
 @import "../../utilidades/variables";
 
-/*estilos generales*/
+/* Estilos generales */
 * {
   @include reset;
 }
@@ -9,8 +9,7 @@ body {
   background-color: $secundary-color;
 }
 
-/* estilos de header */
-
+/* Estilos de header */
 .titulos {
   @include flex;
   @include estilo-texto;
@@ -24,8 +23,7 @@ header nav ul {
   @include estilos-page;
 }
 
-/* estilos de main */
-
+/* Estilos de main */
 .contenedor2 {
   margin: 5px;
   @include estilo-texto;
@@ -35,10 +33,10 @@ header nav ul {
   gap: 20px;
 }
 
-.articulo, 
-.btn, 
-.item1, 
-.item3, 
+.articulo,
+.btn,
+.item1,
+.item3,
 .item5 {
   width: 100%;
   max-width: 800px;
@@ -141,7 +139,7 @@ main p {
 .res {
   @include estilo-texto;
   font-family: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .reseñas p {
@@ -152,38 +150,15 @@ span {
   font-weight: bold;
 }
 
-/* estilos de footer */
-
+/* Estilos de footer */
 footer {
-  @include estilo-texto;
-  text-align: center;
-  background-color: $secundary-color;
-  margin: 0%;
-  padding: 0%;
-}
-
-.pagesFooter {
-  @include flex;
+  position: relative;
   width: 100%;
-  font-size: 20px;
+  overflow: hidden;
 }
 
-.pagesFooter ul {
-  @include flex;
-  flex-direction: row;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.pagesFooter li {
-  @include flex;
-}
-
-.resFooter {
-  top: 70%;
-  width: 90%;
-  font-size: 25px;
-  margin-left: 5%;
+.footerBg {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }
