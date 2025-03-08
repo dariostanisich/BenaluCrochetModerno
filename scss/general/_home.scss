@@ -6,6 +6,11 @@
 }
 
 /* Estilos de header */
+
+.carouselUno .carouselDos{
+margin-bottom: 5px;
+
+}
 .carouselDos {
   display: none;
 }
@@ -57,8 +62,10 @@ header {
 }
 
 /* Estilos de main */
+
 .gallery {
   width: 100%;
+  margin-top: 5px;
   gap: 10px;
   @include grid(grid, 1fr, auto);
 }
@@ -71,10 +78,6 @@ header {
   background-color: $secundary-color;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
 .gallery img:nth-child(2),
 .gallery img:nth-child(4),
 .gallery img:nth-child(6) {
@@ -82,10 +85,12 @@ header {
 }
 
 /* Estilos para el footer */
+
 footer {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .footerIndex {
@@ -107,7 +112,6 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
   display: flex;
   gap: 270px;
 }

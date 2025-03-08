@@ -1,5 +1,7 @@
 @import "../utilidades/mixin.scss";
+
 /* Estilos de desktop */
+
 @media (min-width: 1024px) {
     .container .position-relative .position-absolute {
       top: 40% !important;
@@ -98,7 +100,7 @@
       position: relative;
       width: 100%;
       overflow: hidden;
-      margin-top: 15px;
+      margin-top: 5px;
     }
   
     .footerIndex {
@@ -129,8 +131,9 @@
       width: 40px;
       height: auto;
     }
-  }
-  
-  .ressFot {
-    margin-top: 130px;
+   
+    .ressFot {
+    margin-top: 5px;
+    }
+    
   }

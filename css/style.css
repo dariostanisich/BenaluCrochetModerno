@@ -17,6 +17,10 @@ body {
 }
 
 /* Estilos de header */
+.carouselUno .carouselDos {
+  margin-bottom: 5px;
+}
+
 .carouselDos {
   display: none;
 }
@@ -74,6 +78,7 @@ header ul {
 /* Estilos de main */
 .gallery {
   width: 100%;
+  margin-top: 5px;
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr;
@@ -88,10 +93,6 @@ header ul {
   background-color: #f8edeb;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
-
 .gallery img:nth-child(2),
 .gallery img:nth-child(4),
 .gallery img:nth-child(6) {
@@ -103,6 +104,7 @@ footer {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-top: 5px;
 }
 
 .footerIndex {
@@ -124,7 +126,6 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 10px;
   display: flex;
   gap: 270px;
 }
@@ -289,7 +290,7 @@ footer {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-top: 15px;
+    margin-top: 5px;
   }
   .footerIndex {
     position: relative;
@@ -316,11 +317,10 @@ footer {
     width: 40px;
     height: auto;
   }
+  .ressFot {
+    margin-top: 5px;
+  }
 }
-.ressFot {
-  margin-top: 130px;
-}
-
 /* Estilos generales */
 * {
   margin: 0;
@@ -478,7 +478,7 @@ main p {
   grid-template-rows: repeat(2, 1fr);
   gap: 5px;
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .res {
@@ -497,11 +497,10 @@ main p {
   color: #d77362;
   font-family: "Aurora" #d77362;
   font-family: 12px;
-  margin-bottom: 5px;
 }
 
 .reseñas p {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 span {
@@ -509,8 +508,8 @@ span {
 }
 
 /* Estilos de footer */
-footer {
-  position: relative;
+ressFot {
+  margin-top: 5px;
   width: 100%;
   overflow: hidden;
 }

@@ -1,6 +1,7 @@
 @import "../utilidades/mixin.scss";
 
 /* Estilos de tablet */
+
 @media (min-width: 600px) {
   .position-relative {
     gap: 15px;
@@ -83,4 +84,5 @@
     width: 40px;
     height: auto;
   }
+  
 }
